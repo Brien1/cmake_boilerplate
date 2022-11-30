@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -dynamiclib -Wl,-headerpad_max_install_names -o libtestlib.dylib -install_name @rpath/libtestlib.dylib CMakeFiles/testlib.dir/test.cpp.o 
