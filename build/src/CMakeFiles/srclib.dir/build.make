@@ -83,17 +83,33 @@ src/CMakeFiles/srclib.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srclib.dir/main.cpp.s"
 	cd /Users/brienhall/Desktop/my_project/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brienhall/Desktop/my_project/src/main.cpp -o CMakeFiles/srclib.dir/main.cpp.s
 
+src/CMakeFiles/srclib.dir/square.cpp.o: src/CMakeFiles/srclib.dir/flags.make
+src/CMakeFiles/srclib.dir/square.cpp.o: /Users/brienhall/Desktop/my_project/src/square.cpp
+src/CMakeFiles/srclib.dir/square.cpp.o: src/CMakeFiles/srclib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brienhall/Desktop/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/srclib.dir/square.cpp.o"
+	cd /Users/brienhall/Desktop/my_project/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/srclib.dir/square.cpp.o -MF CMakeFiles/srclib.dir/square.cpp.o.d -o CMakeFiles/srclib.dir/square.cpp.o -c /Users/brienhall/Desktop/my_project/src/square.cpp
+
+src/CMakeFiles/srclib.dir/square.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srclib.dir/square.cpp.i"
+	cd /Users/brienhall/Desktop/my_project/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brienhall/Desktop/my_project/src/square.cpp > CMakeFiles/srclib.dir/square.cpp.i
+
+src/CMakeFiles/srclib.dir/square.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srclib.dir/square.cpp.s"
+	cd /Users/brienhall/Desktop/my_project/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brienhall/Desktop/my_project/src/square.cpp -o CMakeFiles/srclib.dir/square.cpp.s
+
 # Object files for target srclib
 srclib_OBJECTS = \
-"CMakeFiles/srclib.dir/main.cpp.o"
+"CMakeFiles/srclib.dir/main.cpp.o" \
+"CMakeFiles/srclib.dir/square.cpp.o"
 
 # External object files for target srclib
 srclib_EXTERNAL_OBJECTS =
 
 src/libsrclib.a: src/CMakeFiles/srclib.dir/main.cpp.o
+src/libsrclib.a: src/CMakeFiles/srclib.dir/square.cpp.o
 src/libsrclib.a: src/CMakeFiles/srclib.dir/build.make
 src/libsrclib.a: src/CMakeFiles/srclib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/brienhall/Desktop/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsrclib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/brienhall/Desktop/my_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsrclib.a"
 	cd /Users/brienhall/Desktop/my_project/build/src && $(CMAKE_COMMAND) -P CMakeFiles/srclib.dir/cmake_clean_target.cmake
 	cd /Users/brienhall/Desktop/my_project/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srclib.dir/link.txt --verbose=$(VERBOSE)
 

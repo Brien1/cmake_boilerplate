@@ -1,1 +1,1 @@
-add_library(srclib main.cpp)
+add_library(srclib main.cpp square.h square.cpp)

@@ -164,6 +164,30 @@ main.cpp.s:
 	cd /Users/brienhall/Desktop/my_project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+square.o: square.cpp.o
+.PHONY : square.o
+
+# target to build an object file
+square.cpp.o:
+	cd /Users/brienhall/Desktop/my_project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/square.cpp.o
+.PHONY : square.cpp.o
+
+square.i: square.cpp.i
+.PHONY : square.i
+
+# target to preprocess a source file
+square.cpp.i:
+	cd /Users/brienhall/Desktop/my_project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/square.cpp.i
+.PHONY : square.cpp.i
+
+square.s: square.cpp.s
+.PHONY : square.s
+
+# target to generate assembly for a file
+square.cpp.s:
+	cd /Users/brienhall/Desktop/my_project/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/square.cpp.s
+.PHONY : square.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -177,6 +201,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... square.o"
+	@echo "... square.i"
+	@echo "... square.s"
 .PHONY : help
 
 

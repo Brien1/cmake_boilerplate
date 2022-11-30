@@ -8,6 +8,8 @@ enable_testing()
 add_subdirectory(src)
 add_subdirectory(tests)
 target_link_libraries(srclib)
+target_link_libraries(srclib testslib)
+
 add_executable(
   hello_test
   tests/hello_test.cpp
@@ -19,5 +21,6 @@ add_executable(
 )
 
 target_link_libraries(hello_test Catch2::Catch2)
-
+target_link_libraries(hello_test srclib)
+target_link_libraries(main srclib)
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/srclib.dir/main.cpp.o"
   "CMakeFiles/srclib.dir/main.cpp.o.d"
+  "CMakeFiles/srclib.dir/square.cpp.o"
+  "CMakeFiles/srclib.dir/square.cpp.o.d"
   "libsrclib.a"
   "libsrclib.pdb"
 )
