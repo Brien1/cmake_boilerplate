@@ -3,6 +3,6 @@
 
 TEST_CASE( "Square test" ) {
     
-    
+    REQUIRE(0==0);
 
 }

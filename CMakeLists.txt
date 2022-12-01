@@ -11,6 +11,7 @@ add_subdirectory(tests)
 add_executable(
   hello_test
   tests/hello_test.cpp 
+  tests/square_test.cpp
 )
 add_executable(
 main
